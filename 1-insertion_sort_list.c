@@ -21,7 +21,7 @@ void insertion_sort_list(listint_t **list)
 
         while (tmp->prev && tmp->n < tmp->prev->n)
         {
-            // Swap tmp with tmp->prev
+
             tmp->prev->next = tmp->next;
             if (tmp->next)
                 tmp->next->prev = tmp->prev;
